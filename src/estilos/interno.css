@@ -1,0 +1,129 @@
+@import url('reset.css');
+@import url('global.css');
+@import url("componentes/_navigator.css");
+@import url("componentes/_pills.css");
+@import url("componentes/_link-button.css");
+@import url("componentes/_gallery.css");
+
+.b-wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+
+    & video {
+        position: fixed;
+        width: 100%;
+    }
+
+    & .b-left_column {
+        width: 100px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        padding-right: 50px;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    & .b-main_content {
+        height: 100%;
+        width: 100%;
+        padding-left: 130px;
+        position: relative;
+
+        & .b-main_content__top {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            & .b-logo {
+                img {
+                    margin-top: 50px;
+                    margin-left: 0;
+                    margin-bottom: 30px;
+                    width: 300px;
+                }
+            }
+
+            & .b-description {
+                background-color: rgba(0, 0, 0, 0.7);
+                max-width: 50%;
+                padding: 20px;
+                border-radius: 10px;
+
+                & .pills {
+                    margin-bottom: 20px;
+                }
+
+                & .b-description__text {
+                    color: #fff;
+                    line-height: 170%;
+                }
+            }
+
+            & .b-links {
+                padding: 20px;
+                padding-left: 0;
+
+                & ul {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+
+        & .b-main_content__bottom {
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.b-batman-01-02 {
+    background-image: url("../assets/batman-1989/btmovel.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+
+.b-batman-01-03 {
+    background-image: url("../assets/batman-1989/fundoTraje.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.b-batman-02-02 {
+    background-image: url("../assets/batman-2008/batmoto.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.b-batman-02-03 {
+    background-image: url("../assets/batman-2008/trajeFundo.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.b-batman-03-02 {
+    background-image: url("../assets/batman-2022/Batmovel.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.b-batman-03-03 {
+    background-image: url("../assets/batman-2022/trajeFundo.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}

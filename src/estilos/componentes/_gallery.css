@@ -1,0 +1,28 @@
+.gallery {
+    padding: 20px;
+    padding-left: 0;
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+
+        & li {
+            margin-left: 25px;
+
+            & a {
+                & img {
+                    border: solid 6px white;
+                    border-radius: 15px;
+                    width: 300px;
+                    height: 150px;
+                    object-fit: cover;
+                    box-shadow: 0px 0px 37px -16px rgba(0,0,0,1);
+                }
+            }
+        }
+
+        & li:first-child {
+            margin-left: 0px;
+        }
+    }
+}
