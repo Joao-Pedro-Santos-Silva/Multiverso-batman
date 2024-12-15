@@ -35,30 +35,34 @@
         </ul>
     </nav>
     <div class="b-conteiner">
-        <a href="src/pages/BATMAN(1989)/batman-resenha.html" class="b-card" id="batman-1">
-            <img  class="b-card__background" src="src/assets/batman-1989/fundo.png" alt="">
-            <img class="b-card__image" src="src/assets/batman-1989/bataman2.png" alt="">
-            <h2 class="b-card__title">Batman(1989)</h2>
-        </a>
-        <a href="src/pages/BATMAN(2008)/batman-resenha.html" class="b-card" id="batman-2">
-            <img class="b-card__background" src="src/assets/batman-2008/fundo2.png" alt="">
-            <img class="b-card__image" src="src/assets/batman-2008/Ocavaleiro.png" alt="">
-            <h2 class="b-card__title">Batman(2008)</h2>
-        </a>
-        <a href="src/pages/BATMAN(2022)/batman-resenha.html" class="b-card" id="batman-3">
-            <img class="b-card__background" src="src/assets/batman-2022/fundo2.png" alt="">
-            <img class="b-card__image" src="src/assets/batman-2022/meuDeus.png" alt="">
-            <h2 class="b-card__title">The Batman(2022)</h2>
-        </a>
+
+        <div class="b-card-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+            <a href="src/pages/BATMAN(1989)/batman-resenha.html" class="b-card" id="batman-1">
+                <img  class="b-card__background" src="src/assets/batman-1989/fundo.png" alt="">
+                <img class="b-card__image" src="src/assets/batman-1989/bataman2.png" alt="">
+                <h2 class="b-card__title">Batman(1989)</h2>
+            </a>
+            <a href="src/pages/BATMAN(2008)/batman-resenha.html" class="b-card" id="batman-2">
+                <img class="b-card__background" src="src/assets/batman-2008/fundo2.png" alt="">
+                <img class="b-card__image" src="src/assets/batman-2008/Ocavaleiro.png" alt="">
+                <h2 class="b-card__title">Batman(2008)</h2>
+            </a>
+            <a href="src/pages/BATMAN(2022)/batman-resenha.html" class="b-card" id="batman-3">
+                <img class="b-card__background" src="src/assets/batman-2022/fundo2.png" alt="">
+                <img class="b-card__image" src="src/assets/batman-2022/meuDeus.png" alt="">
+                <h2 class="b-card__title">The Batman(2022)</h2>
+            </a>
+        </div>
+
     </div>
     <div class="b-controller">
-        <div class="b-controller__button">
+        <div id="1" onclick="selectCarouselItem(this)" class="b-controller__button b-controller__button--active">
             01
         </div>
-        <div class="b-controller__button">
+        <div id="2" onclick="selectCarouselItem(this)" class="b-controller__button">
             02
         </div>
-        <div class="b-controller__button">
+        <div id="3" onclick="selectCarouselItem(this)" class="b-controller__button">
             03
         </div>
         <div class="b-controller__line"></div>

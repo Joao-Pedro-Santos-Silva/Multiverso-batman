@@ -44,24 +44,45 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    perspective: 3000px;
 
-    .b-card {
-        border: 0.5rem solid #ffffff;
-        width: calc(100% / 3 - 8%);
-        height: 70vh;
-        position: relative;
-        transition: filter 0.5s ease-in-out;
-        
-        .b-card__image {
+    .b-card-carousel{
+        display: flex;
+        justify-content: center;
+        width: calc(100vw / 3 - 10%);
+        transform-style: preserve-3d;
+        transition: transform 0.4s ease-in;
+
+        .b-card {
+            border: 0.5rem solid #ffffff;
             width: 100%;
-            height: 100%;
-            object-fit: contain;
-            position: relative;
-            transition: 1s ease-in-out;
+            height: 70vh;
+            position: absolute;
+            transition: filter 0.5s ease-in-out;
+            
+            .b-card__image {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                position: relative;
+                transition: 1s ease-in-out;
+            }
+            
         }
 
-        
+        .b-card:nth-child(1) {
+            transform: rotateY(0deg) translateZ(50vw);
+        }
+
+        .b-card:nth-child(2) {
+            transform: rotateY(120deg) translateZ(50vw);
+        }
+
+        .b-card:nth-child(3) {
+            transform: rotateY(240deg) translateZ(50vw);
+        }
     }
+
 }
 
 .b-card__title {
@@ -84,11 +105,13 @@ body::before {
 }
 
 .b-controller {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    bottom: 1.5rem;
+    width: 100%;
 
     .b-controller__button {
         display: flex;
@@ -115,6 +138,13 @@ body::before {
         transform: scale(1.1);
     }
 
+    .b-controller__button--active{
+        background-color: #ffffff;
+        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+        outline: 2px solid #ffffff;
+    }
+
     .b-controller__line {
         background-color: #ffffff;
         width: 50%;
@@ -122,6 +152,7 @@ body::before {
         position: absolute;
     }
 }
+
 
 /* Hover Animação */
 
