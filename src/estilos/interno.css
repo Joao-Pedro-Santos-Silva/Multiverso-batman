@@ -12,6 +12,8 @@
 
     & video {
         position: fixed;
+        object-fit: cover;
+        height: 100%;
         width: 100%;
     }
 
@@ -127,3 +129,104 @@
     background-position: center;
     position: absolute;
 }
+
+@media (max-width: 1024px) {
+    .b-wrapper .b-left-column {
+      width: 80px;
+      padding-right: 20px;
+    }
+  
+    .b-wrapper .b-main-content {
+      padding-left: 100px;
+    }
+  
+    .b-wrapper .b-main-content__top .b-description {
+      max-width: 70%;
+    }
+  
+    .b-wrapper .b-main-content .b-logo img {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      max-width: 80%;
+    }
+  
+    .b-wrapper video {
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+    }
+  
+    .b-wrapper .gallery ul li img {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+    .b-wrapper video {
+      object-fit: contain; 
+      min-width: 100%; 
+      min-height: 100%;
+    }
+  
+    .b-wrapper .b-left-column {
+      width: 60px;
+    }
+  
+    .b-wrapper .b-main-content {
+      padding-left: 80px;
+    }
+  
+    .b-wrapper .b-main-content__top .b-description {
+      max-width: 90%; 
+      font-size: 0.9rem;
+    }
+  
+    .b-wrapper .b-main-content .b-logo img {
+      max-width: 70%;
+    }
+  
+    .b-wrapper .b-main-content .b-links ul {
+      flex-direction: column; 
+    }
+  
+    .b-wrapper .gallery ul li img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .b-wrapper .s-left-column {
+      width: 50px;
+    }
+  
+    .b-wrapper .b-main-content {
+      padding-left: 60px;
+    }
+  
+    .b-description {
+      height: 200px;
+      width: 500px;
+      background-size: cover;
+      overflow: auto;
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+  
+    .b-wrapper .b-main-content .b-logo img {
+      max-width: 60%;
+    }
+  
+    .b-wrapper video {
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .b-wrapper .b-main-content .b-links ul li {
+      margin-bottom: 10px;
+    }
+  
+  }

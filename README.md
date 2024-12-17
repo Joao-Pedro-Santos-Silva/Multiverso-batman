@@ -55,4 +55,4 @@ Você pode conferir a aplicação em funcionamento [aqui]().
 
 ---
 
-Divirta-se tocando com o **Multiverso Batman**
+Divirta-se com o **Multiverso Batman**
