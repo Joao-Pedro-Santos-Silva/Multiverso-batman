@@ -51,7 +51,7 @@ Se você tiver dúvidas ou sugestões, entre em contato:
 
 ## 🎥 Demonstração
 
-Você pode conferir a aplicação em funcionamento [aqui](https://tederr.github.io/Multiverso-batman/).
+Você pode conferir a aplicação em funcionamento [aqui]([https://tederr.github.io/Multiverso-batman/](https://joao-pedro-santos-silva.github.io/Multiverso-batman/)).
 
 ---
 
